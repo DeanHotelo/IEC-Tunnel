@@ -361,3 +361,56 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+
+
+
+### TwinCAT3 ###  
+# website: https://www.beckhoff.com/twincat3/
+
+# TwinCAT PLC
+*.plcproj.bak
+*.plcproj.orig
+*.tpy
+*.tclrs
+*.library
+*.compiled-library
+*.compileinfo
+*.asm
+*.core
+LineIDs.dbg
+LineIDs.dbg.bak
+
+# TwinCAT C++ and shared types
+# (if you’re only doing PLC work you can ignore .tmc files;
+# otherwise include them in source control)
+*.tmc
+*.tmcRefac
+
+# TwinCAT project files
+*.tsproj.bak
+*.tsproj.b?k
+*.tsproj.orig
+*.xti.bak
+*.xti.bk?
+*.xti.orig
+*.xtv
+*.xtv.bak
+*.xtv.bk?
+
+# Multi-user (Git-integration) specific
+**/.TcGit/
+
+# Exclude transient TwinCAT folders
+**/_Boot/
+**/_CompileInfo/
+**/_Libraries/
+**/_ModuleInstall/
+**/_Deployment/
+**/_Repository/
+
+# VS-Shell project files (these can be regenerated)
+**/.vs/
+*.~u
+*.project.~u
+*.suo
